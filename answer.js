@@ -320,12 +320,13 @@ dbwebb.assert("2.2", ANSWER, false);
  * Write your code below and put the answer into the variable ANSWER.
  */
 
+let number= 481;
+for(let i=0; i<10; i++){
+    number += 6;
+}
 
 
-
-
-
-ANSWER = "Replace this text with the variable holding the answer.";
+ANSWER = number;
 
 // I will now test your answer - change false to true to get a hint.
 dbwebb.assert("3.1", ANSWER, false);
@@ -340,12 +341,13 @@ dbwebb.assert("3.1", ANSWER, false);
  * Write your code below and put the answer into the variable ANSWER.
  */
 
+number = 551;
+for(let i=0; i<10; i++){
+    number -= 8;
+}
 
 
-
-
-
-ANSWER = "Replace this text with the variable holding the answer.";
+ANSWER = number;
 
 // I will now test your answer - change false to true to get a hint.
 dbwebb.assert("3.2", ANSWER, false);
@@ -365,11 +367,15 @@ dbwebb.assert("3.2", ANSWER, false);
  */
 
 
+let start = 22;
+let stop = 45;
+result = start.toString();
+for(let i = start+2; i<stop ; i += 2){
+   result += `,${i}`;  
+}
 
 
-
-
-ANSWER = "Replace this text with the variable holding the answer.";
+ANSWER = result;
 
 // I will now test your answer - change false to true to get a hint.
 dbwebb.assert("3.3", ANSWER, false);
@@ -392,12 +398,15 @@ dbwebb.assert("3.3", ANSWER, false);
  * Write your code below and put the answer into the variable ANSWER.
  */
 
+let value = 10;
+let step = 0;
+while(value <= 481){
+    value += 6;
+    step++;
+}
 
 
-
-
-
-ANSWER = "Replace this text with the variable holding the answer.";
+ANSWER = step;
 
 // I will now test your answer - change false to true to get a hint.
 dbwebb.assert("4.1", ANSWER, false);
@@ -413,12 +422,18 @@ dbwebb.assert("4.1", ANSWER, false);
  * Write your code below and put the answer into the variable ANSWER.
  */
 
+value = 551;
+step = 0;
+while(value >= 0){
+    value -= 8;
+    step++;
+}
 
 
 
 
 
-ANSWER = "Replace this text with the variable holding the answer.";
+ANSWER = step;
 
 // I will now test your answer - change false to true to get a hint.
 dbwebb.assert("4.2", ANSWER, false);
@@ -434,12 +449,26 @@ dbwebb.assert("4.2", ANSWER, false);
  * Write your code below and put the answer into the variable ANSWER.
  */
 
+start = 28;
+stop = 63;
+let i = start;
+result = "";
+while(i <= stop){
+    if(!(i % 5) || !(i % 7)){
+        if (i == start){
+            result += i;   
+        } else {
+            result += `,${i}`;   
+        }      
+    }
+
+    i++;
+}
 
 
 
 
-
-ANSWER = "Replace this text with the variable holding the answer.";
+ANSWER = result;
 
 // I will now test your answer - change false to true to get a hint.
 dbwebb.assert("4.3", ANSWER, false);
