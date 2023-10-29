@@ -217,7 +217,7 @@ let message;
 let color;
 switch (myFruit){
     case "banana":
-        // message = "The banana is yellow.";
+                // message = "The banana is yellow.";
         // console.log(message);
         color = "yellow";
         break;
@@ -264,13 +264,41 @@ dbwebb.assert("2.1", ANSWER, false);
  *
  * Write your code below and put the answer into the variable ANSWER.
  */
+ myFruit = "pear";
+switch (myFruit){
+    case "banana":
+         message = "The banana is yellow.";
+        // console.log(message);
+        //color = "yellow";
+        break;
+    case "apple":
+         message = "The apple is green.";
+        // console.log(message);
+        //color = "green";
+        break;
+    case "kiwi":
+         message = "The kiwi is green.";
+        // console.log(message);
+        //color = "green";        
+        break;
+    case "plum":
+         message = "The plum is purple.";
+        //console.log(message);
+        //color = "purple";
+        break;
+    default:
+         message = "That is an unknown fruit.";
+         console.log(message);   
+        //color = "not defined";
+}
 
 
 
+// message = `The ${myFruit} is ${color}.`;
+
+ANSWER = message;
 
 
-
-ANSWER = "Replace this text with the variable holding the answer.";
 
 // I will now test your answer - change false to true to get a hint.
 dbwebb.assert("2.2", ANSWER, false);
